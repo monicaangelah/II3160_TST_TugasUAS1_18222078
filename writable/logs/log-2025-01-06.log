@@ -1,0 +1,736 @@
+DEBUG - 2025-01-06 02:22:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-01-06 02:22:01 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+DEBUG - 2025-01-06 02:22:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-01-06 02:22:23 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+DEBUG - 2025-01-06 02:22:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-01-06 02:22:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-01-06 02:22:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-01-06 02:22:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-01-06 02:22:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-01-06 02:22:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-01-06 02:22:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-01-06 02:22:51 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+DEBUG - 2025-01-06 02:22:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-01-06 02:22:55 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+DEBUG - 2025-01-06 02:22:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-01-06 02:38:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-01-06 02:38:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-01-06 02:38:27 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+DEBUG - 2025-01-06 02:39:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-01-06 02:39:24 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+DEBUG - 2025-01-06 02:39:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-01-06 02:39:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-01-06 02:44:51 --> ErrorException: Undefined variable $semester
+[Method: POST, Route: admin/courses]
+in APPPATH\Controllers\Admin\EditCourseController.php on line 29.
+ 1 APPPATH\Controllers\Admin\EditCourseController.php(29): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $semester', 'D:\\MONICA\\ITB\\KULIAH\\JURUSAN\\SEMESTER 5\\II3160 Teknologi Sistem Terintegrasi\\UAS\\TST_UAS_Kel7\\app\\Controllers\\Admin\\EditCourseController.php', 29)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\EditCourseController->create()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\EditCourseController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('D:\\MONICA\\ITB\\KULIAH\\JURUSAN\\SEMESTER 5\\II3160 Teknologi Sistem Terintegrasi\\UAS\\TST_UAS_Kel7\\public\\index.php')
+ERROR - 2025-01-06 02:46:04 --> mysqli_sql_exception: Column 'semester' cannot be null in D:\MONICA\ITB\KULIAH\JURUSAN\SEMESTER 5\II3160 Teknologi Sistem Terintegrasi\UAS\TST_UAS_Kel7\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 D:\MONICA\ITB\KULIAH\JURUSAN\SEMESTER 5\II3160 Teknologi Sistem Terintegrasi\UAS\TST_UAS_Kel7\system\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `co...', 0)
+#1 D:\MONICA\ITB\KULIAH\JURUSAN\SEMESTER 5\II3160 Teknologi Sistem Terintegrasi\UAS\TST_UAS_Kel7\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `co...')
+#2 D:\MONICA\ITB\KULIAH\JURUSAN\SEMESTER 5\II3160 Teknologi Sistem Terintegrasi\UAS\TST_UAS_Kel7\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `co...')
+#3 D:\MONICA\ITB\KULIAH\JURUSAN\SEMESTER 5\II3160 Teknologi Sistem Terintegrasi\UAS\TST_UAS_Kel7\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `co...', Array, false)
+#4 D:\MONICA\ITB\KULIAH\JURUSAN\SEMESTER 5\II3160 Teknologi Sistem Terintegrasi\UAS\TST_UAS_Kel7\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 D:\MONICA\ITB\KULIAH\JURUSAN\SEMESTER 5\II3160 Teknologi Sistem Terintegrasi\UAS\TST_UAS_Kel7\system\BaseModel.php(839): CodeIgniter\Model->doInsert(Array)
+#6 D:\MONICA\ITB\KULIAH\JURUSAN\SEMESTER 5\II3160 Teknologi Sistem Terintegrasi\UAS\TST_UAS_Kel7\system\Model.php(802): CodeIgniter\BaseModel->insert(Array, false)
+#7 D:\MONICA\ITB\KULIAH\JURUSAN\SEMESTER 5\II3160 Teknologi Sistem Terintegrasi\UAS\TST_UAS_Kel7\system\BaseModel.php(750): CodeIgniter\Model->insert(Array, false)
+#8 D:\MONICA\ITB\KULIAH\JURUSAN\SEMESTER 5\II3160 Teknologi Sistem Terintegrasi\UAS\TST_UAS_Kel7\app\Controllers\Admin\EditCourseController.php(35): CodeIgniter\BaseModel->save(Array)
+#9 D:\MONICA\ITB\KULIAH\JURUSAN\SEMESTER 5\II3160 Teknologi Sistem Terintegrasi\UAS\TST_UAS_Kel7\system\CodeIgniter.php(933): App\Controllers\Admin\EditCourseController->create()
+#10 D:\MONICA\ITB\KULIAH\JURUSAN\SEMESTER 5\II3160 Teknologi Sistem Terintegrasi\UAS\TST_UAS_Kel7\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\EditCourseController))
+#11 D:\MONICA\ITB\KULIAH\JURUSAN\SEMESTER 5\II3160 Teknologi Sistem Terintegrasi\UAS\TST_UAS_Kel7\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 D:\MONICA\ITB\KULIAH\JURUSAN\SEMESTER 5\II3160 Teknologi Sistem Terintegrasi\UAS\TST_UAS_Kel7\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#13 D:\MONICA\ITB\KULIAH\JURUSAN\SEMESTER 5\II3160 Teknologi Sistem Terintegrasi\UAS\TST_UAS_Kel7\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#14 D:\MONICA\ITB\KULIAH\JURUSAN\SEMESTER 5\II3160 Teknologi Sistem Terintegrasi\UAS\TST_UAS_Kel7\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#15 D:\MONICA\ITB\KULIAH\JURUSAN\SEMESTER 5\II3160 Teknologi Sistem Terintegrasi\UAS\TST_UAS_Kel7\system\rewrite.php(44): require_once('D:\\MONICA\\ITB\\K...')
+#16 {main}
+CRITICAL - 2025-01-06 02:46:04 --> CodeIgniter\Database\Exceptions\DatabaseException: Column 'semester' cannot be null
+[Method: POST, Route: admin/courses]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `courses` (`course_name`, `credits`, `semester`, `day`, `start_time`, `duration`) VALUES (:course_name:, :credits:, :semester:, :day:, :start_time:, :duration:)', [...], false)
+ 2 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(839): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH\BaseModel.php(750): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH\Controllers\Admin\EditCourseController.php(35): CodeIgniter\BaseModel->save([...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\EditCourseController->create()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\EditCourseController))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('D:\\MONICA\\ITB\\KULIAH\\JURUSAN\\SEMESTER 5\\II3160 Teknologi Sistem Terintegrasi\\UAS\\TST_UAS_Kel7\\public\\index.php')
+CRITICAL - 2025-01-06 02:46:04 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Column 'semester' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `courses` (`course_name`, `credits`, `semester`, `day`, `start_time`, `duration`) VALUES (\'masuk\', \'2\', NULL, \'Senin\', \'10:00\', 100)')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `courses` (`course_name`, `credits`, `semester`, `day`, `start_time`, `duration`) VALUES (\'masuk\', \'2\', NULL, \'Senin\', \'10:00\', 100)')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `courses` (`course_name`, `credits`, `semester`, `day`, `start_time`, `duration`) VALUES (:course_name:, :credits:, :semester:, :day:, :start_time:, :duration:)', [...], false)
+ 4 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(839): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], false)
+ 7 SYSTEMPATH\BaseModel.php(750): CodeIgniter\Model->insert([...], false)
+ 8 APPPATH\Controllers\Admin\EditCourseController.php(35): CodeIgniter\BaseModel->save([...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\EditCourseController->create()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\EditCourseController))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('D:\\MONICA\\ITB\\KULIAH\\JURUSAN\\SEMESTER 5\\II3160 Teknologi Sistem Terintegrasi\\UAS\\TST_UAS_Kel7\\public\\index.php')
+CRITICAL - 2025-01-06 02:46:04 --> [Caused by] mysqli_sql_exception: Column 'semester' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `courses` (`course_name`, `credits`, `semester`, `day`, `start_time`, `duration`) VALUES (\'masuk\', \'2\', NULL, \'Senin\', \'10:00\', 100)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `courses` (`course_name`, `credits`, `semester`, `day`, `start_time`, `duration`) VALUES (\'masuk\', \'2\', NULL, \'Senin\', \'10:00\', 100)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `courses` (`course_name`, `credits`, `semester`, `day`, `start_time`, `duration`) VALUES (\'masuk\', \'2\', NULL, \'Senin\', \'10:00\', 100)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `courses` (`course_name`, `credits`, `semester`, `day`, `start_time`, `duration`) VALUES (:course_name:, :credits:, :semester:, :day:, :start_time:, :duration:)', [...], false)
+ 5 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(839): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], false)
+ 8 SYSTEMPATH\BaseModel.php(750): CodeIgniter\Model->insert([...], false)
+ 9 APPPATH\Controllers\Admin\EditCourseController.php(35): CodeIgniter\BaseModel->save([...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\EditCourseController->create()
+11 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\EditCourseController))
+12 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+16 SYSTEMPATH\rewrite.php(44): require_once('D:\\MONICA\\ITB\\KULIAH\\JURUSAN\\SEMESTER 5\\II3160 Teknologi Sistem Terintegrasi\\UAS\\TST_UAS_Kel7\\public\\index.php')
+ERROR - 2025-01-06 02:49:25 --> mysqli_sql_exception: Column 'semester' cannot be null in D:\MONICA\ITB\KULIAH\JURUSAN\SEMESTER 5\II3160 Teknologi Sistem Terintegrasi\UAS\TST_UAS_Kel7\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 D:\MONICA\ITB\KULIAH\JURUSAN\SEMESTER 5\II3160 Teknologi Sistem Terintegrasi\UAS\TST_UAS_Kel7\system\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `co...', 0)
+#1 D:\MONICA\ITB\KULIAH\JURUSAN\SEMESTER 5\II3160 Teknologi Sistem Terintegrasi\UAS\TST_UAS_Kel7\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `co...')
+#2 D:\MONICA\ITB\KULIAH\JURUSAN\SEMESTER 5\II3160 Teknologi Sistem Terintegrasi\UAS\TST_UAS_Kel7\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `co...')
+#3 D:\MONICA\ITB\KULIAH\JURUSAN\SEMESTER 5\II3160 Teknologi Sistem Terintegrasi\UAS\TST_UAS_Kel7\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `co...', Array, false)
+#4 D:\MONICA\ITB\KULIAH\JURUSAN\SEMESTER 5\II3160 Teknologi Sistem Terintegrasi\UAS\TST_UAS_Kel7\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 D:\MONICA\ITB\KULIAH\JURUSAN\SEMESTER 5\II3160 Teknologi Sistem Terintegrasi\UAS\TST_UAS_Kel7\system\BaseModel.php(839): CodeIgniter\Model->doInsert(Array)
+#6 D:\MONICA\ITB\KULIAH\JURUSAN\SEMESTER 5\II3160 Teknologi Sistem Terintegrasi\UAS\TST_UAS_Kel7\system\Model.php(802): CodeIgniter\BaseModel->insert(Array, false)
+#7 D:\MONICA\ITB\KULIAH\JURUSAN\SEMESTER 5\II3160 Teknologi Sistem Terintegrasi\UAS\TST_UAS_Kel7\system\BaseModel.php(750): CodeIgniter\Model->insert(Array, false)
+#8 D:\MONICA\ITB\KULIAH\JURUSAN\SEMESTER 5\II3160 Teknologi Sistem Terintegrasi\UAS\TST_UAS_Kel7\app\Controllers\Admin\EditCourseController.php(35): CodeIgniter\BaseModel->save(Array)
+#9 D:\MONICA\ITB\KULIAH\JURUSAN\SEMESTER 5\II3160 Teknologi Sistem Terintegrasi\UAS\TST_UAS_Kel7\system\CodeIgniter.php(933): App\Controllers\Admin\EditCourseController->create()
+#10 D:\MONICA\ITB\KULIAH\JURUSAN\SEMESTER 5\II3160 Teknologi Sistem Terintegrasi\UAS\TST_UAS_Kel7\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\EditCourseController))
+#11 D:\MONICA\ITB\KULIAH\JURUSAN\SEMESTER 5\II3160 Teknologi Sistem Terintegrasi\UAS\TST_UAS_Kel7\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 D:\MONICA\ITB\KULIAH\JURUSAN\SEMESTER 5\II3160 Teknologi Sistem Terintegrasi\UAS\TST_UAS_Kel7\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#13 D:\MONICA\ITB\KULIAH\JURUSAN\SEMESTER 5\II3160 Teknologi Sistem Terintegrasi\UAS\TST_UAS_Kel7\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#14 D:\MONICA\ITB\KULIAH\JURUSAN\SEMESTER 5\II3160 Teknologi Sistem Terintegrasi\UAS\TST_UAS_Kel7\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#15 D:\MONICA\ITB\KULIAH\JURUSAN\SEMESTER 5\II3160 Teknologi Sistem Terintegrasi\UAS\TST_UAS_Kel7\system\rewrite.php(44): require_once('D:\\MONICA\\ITB\\K...')
+#16 {main}
+CRITICAL - 2025-01-06 02:49:25 --> CodeIgniter\Database\Exceptions\DatabaseException: Column 'semester' cannot be null
+[Method: POST, Route: admin/courses]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `courses` (`course_name`, `credits`, `semester`, `day`, `start_time`, `duration`) VALUES (:course_name:, :credits:, :semester:, :day:, :start_time:, :duration:)', [...], false)
+ 2 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(839): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH\BaseModel.php(750): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH\Controllers\Admin\EditCourseController.php(35): CodeIgniter\BaseModel->save([...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\EditCourseController->create()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\EditCourseController))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('D:\\MONICA\\ITB\\KULIAH\\JURUSAN\\SEMESTER 5\\II3160 Teknologi Sistem Terintegrasi\\UAS\\TST_UAS_Kel7\\public\\index.php')
+CRITICAL - 2025-01-06 02:49:25 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Column 'semester' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `courses` (`course_name`, `credits`, `semester`, `day`, `start_time`, `duration`) VALUES (\'masuk\', \'2\', NULL, \'Senin\', \'10:00\', 100)')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `courses` (`course_name`, `credits`, `semester`, `day`, `start_time`, `duration`) VALUES (\'masuk\', \'2\', NULL, \'Senin\', \'10:00\', 100)')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `courses` (`course_name`, `credits`, `semester`, `day`, `start_time`, `duration`) VALUES (:course_name:, :credits:, :semester:, :day:, :start_time:, :duration:)', [...], false)
+ 4 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(839): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], false)
+ 7 SYSTEMPATH\BaseModel.php(750): CodeIgniter\Model->insert([...], false)
+ 8 APPPATH\Controllers\Admin\EditCourseController.php(35): CodeIgniter\BaseModel->save([...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\EditCourseController->create()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\EditCourseController))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('D:\\MONICA\\ITB\\KULIAH\\JURUSAN\\SEMESTER 5\\II3160 Teknologi Sistem Terintegrasi\\UAS\\TST_UAS_Kel7\\public\\index.php')
+CRITICAL - 2025-01-06 02:49:25 --> [Caused by] mysqli_sql_exception: Column 'semester' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `courses` (`course_name`, `credits`, `semester`, `day`, `start_time`, `duration`) VALUES (\'masuk\', \'2\', NULL, \'Senin\', \'10:00\', 100)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `courses` (`course_name`, `credits`, `semester`, `day`, `start_time`, `duration`) VALUES (\'masuk\', \'2\', NULL, \'Senin\', \'10:00\', 100)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `courses` (`course_name`, `credits`, `semester`, `day`, `start_time`, `duration`) VALUES (\'masuk\', \'2\', NULL, \'Senin\', \'10:00\', 100)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `courses` (`course_name`, `credits`, `semester`, `day`, `start_time`, `duration`) VALUES (:course_name:, :credits:, :semester:, :day:, :start_time:, :duration:)', [...], false)
+ 5 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(839): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], false)
+ 8 SYSTEMPATH\BaseModel.php(750): CodeIgniter\Model->insert([...], false)
+ 9 APPPATH\Controllers\Admin\EditCourseController.php(35): CodeIgniter\BaseModel->save([...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\EditCourseController->create()
+11 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\EditCourseController))
+12 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+16 SYSTEMPATH\rewrite.php(44): require_once('D:\\MONICA\\ITB\\KULIAH\\JURUSAN\\SEMESTER 5\\II3160 Teknologi Sistem Terintegrasi\\UAS\\TST_UAS_Kel7\\public\\index.php')
+ERROR - 2025-01-06 02:50:04 --> mysqli_sql_exception: Column 'semester' cannot be null in D:\MONICA\ITB\KULIAH\JURUSAN\SEMESTER 5\II3160 Teknologi Sistem Terintegrasi\UAS\TST_UAS_Kel7\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 D:\MONICA\ITB\KULIAH\JURUSAN\SEMESTER 5\II3160 Teknologi Sistem Terintegrasi\UAS\TST_UAS_Kel7\system\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `co...', 0)
+#1 D:\MONICA\ITB\KULIAH\JURUSAN\SEMESTER 5\II3160 Teknologi Sistem Terintegrasi\UAS\TST_UAS_Kel7\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `co...')
+#2 D:\MONICA\ITB\KULIAH\JURUSAN\SEMESTER 5\II3160 Teknologi Sistem Terintegrasi\UAS\TST_UAS_Kel7\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `co...')
+#3 D:\MONICA\ITB\KULIAH\JURUSAN\SEMESTER 5\II3160 Teknologi Sistem Terintegrasi\UAS\TST_UAS_Kel7\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `co...', Array, false)
+#4 D:\MONICA\ITB\KULIAH\JURUSAN\SEMESTER 5\II3160 Teknologi Sistem Terintegrasi\UAS\TST_UAS_Kel7\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 D:\MONICA\ITB\KULIAH\JURUSAN\SEMESTER 5\II3160 Teknologi Sistem Terintegrasi\UAS\TST_UAS_Kel7\system\BaseModel.php(839): CodeIgniter\Model->doInsert(Array)
+#6 D:\MONICA\ITB\KULIAH\JURUSAN\SEMESTER 5\II3160 Teknologi Sistem Terintegrasi\UAS\TST_UAS_Kel7\system\Model.php(802): CodeIgniter\BaseModel->insert(Array, false)
+#7 D:\MONICA\ITB\KULIAH\JURUSAN\SEMESTER 5\II3160 Teknologi Sistem Terintegrasi\UAS\TST_UAS_Kel7\system\BaseModel.php(750): CodeIgniter\Model->insert(Array, false)
+#8 D:\MONICA\ITB\KULIAH\JURUSAN\SEMESTER 5\II3160 Teknologi Sistem Terintegrasi\UAS\TST_UAS_Kel7\app\Controllers\Admin\EditCourseController.php(35): CodeIgniter\BaseModel->save(Array)
+#9 D:\MONICA\ITB\KULIAH\JURUSAN\SEMESTER 5\II3160 Teknologi Sistem Terintegrasi\UAS\TST_UAS_Kel7\system\CodeIgniter.php(933): App\Controllers\Admin\EditCourseController->create()
+#10 D:\MONICA\ITB\KULIAH\JURUSAN\SEMESTER 5\II3160 Teknologi Sistem Terintegrasi\UAS\TST_UAS_Kel7\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\EditCourseController))
+#11 D:\MONICA\ITB\KULIAH\JURUSAN\SEMESTER 5\II3160 Teknologi Sistem Terintegrasi\UAS\TST_UAS_Kel7\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 D:\MONICA\ITB\KULIAH\JURUSAN\SEMESTER 5\II3160 Teknologi Sistem Terintegrasi\UAS\TST_UAS_Kel7\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#13 D:\MONICA\ITB\KULIAH\JURUSAN\SEMESTER 5\II3160 Teknologi Sistem Terintegrasi\UAS\TST_UAS_Kel7\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#14 D:\MONICA\ITB\KULIAH\JURUSAN\SEMESTER 5\II3160 Teknologi Sistem Terintegrasi\UAS\TST_UAS_Kel7\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#15 D:\MONICA\ITB\KULIAH\JURUSAN\SEMESTER 5\II3160 Teknologi Sistem Terintegrasi\UAS\TST_UAS_Kel7\system\rewrite.php(44): require_once('D:\\MONICA\\ITB\\K...')
+#16 {main}
+CRITICAL - 2025-01-06 02:50:04 --> CodeIgniter\Database\Exceptions\DatabaseException: Column 'semester' cannot be null
+[Method: POST, Route: admin/courses]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `courses` (`course_name`, `credits`, `semester`, `day`, `start_time`, `duration`) VALUES (:course_name:, :credits:, :semester:, :day:, :start_time:, :duration:)', [...], false)
+ 2 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(839): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH\BaseModel.php(750): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH\Controllers\Admin\EditCourseController.php(35): CodeIgniter\BaseModel->save([...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\EditCourseController->create()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\EditCourseController))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('D:\\MONICA\\ITB\\KULIAH\\JURUSAN\\SEMESTER 5\\II3160 Teknologi Sistem Terintegrasi\\UAS\\TST_UAS_Kel7\\public\\index.php')
+CRITICAL - 2025-01-06 02:50:04 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Column 'semester' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `courses` (`course_name`, `credits`, `semester`, `day`, `start_time`, `duration`) VALUES (\'masuk\', \'2\', NULL, \'Senin\', \'10:00\', 100)')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `courses` (`course_name`, `credits`, `semester`, `day`, `start_time`, `duration`) VALUES (\'masuk\', \'2\', NULL, \'Senin\', \'10:00\', 100)')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `courses` (`course_name`, `credits`, `semester`, `day`, `start_time`, `duration`) VALUES (:course_name:, :credits:, :semester:, :day:, :start_time:, :duration:)', [...], false)
+ 4 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(839): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], false)
+ 7 SYSTEMPATH\BaseModel.php(750): CodeIgniter\Model->insert([...], false)
+ 8 APPPATH\Controllers\Admin\EditCourseController.php(35): CodeIgniter\BaseModel->save([...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\EditCourseController->create()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\EditCourseController))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('D:\\MONICA\\ITB\\KULIAH\\JURUSAN\\SEMESTER 5\\II3160 Teknologi Sistem Terintegrasi\\UAS\\TST_UAS_Kel7\\public\\index.php')
+CRITICAL - 2025-01-06 02:50:04 --> [Caused by] mysqli_sql_exception: Column 'semester' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `courses` (`course_name`, `credits`, `semester`, `day`, `start_time`, `duration`) VALUES (\'masuk\', \'2\', NULL, \'Senin\', \'10:00\', 100)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `courses` (`course_name`, `credits`, `semester`, `day`, `start_time`, `duration`) VALUES (\'masuk\', \'2\', NULL, \'Senin\', \'10:00\', 100)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `courses` (`course_name`, `credits`, `semester`, `day`, `start_time`, `duration`) VALUES (\'masuk\', \'2\', NULL, \'Senin\', \'10:00\', 100)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `courses` (`course_name`, `credits`, `semester`, `day`, `start_time`, `duration`) VALUES (:course_name:, :credits:, :semester:, :day:, :start_time:, :duration:)', [...], false)
+ 5 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(839): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], false)
+ 8 SYSTEMPATH\BaseModel.php(750): CodeIgniter\Model->insert([...], false)
+ 9 APPPATH\Controllers\Admin\EditCourseController.php(35): CodeIgniter\BaseModel->save([...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\EditCourseController->create()
+11 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\EditCourseController))
+12 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+16 SYSTEMPATH\rewrite.php(44): require_once('D:\\MONICA\\ITB\\KULIAH\\JURUSAN\\SEMESTER 5\\II3160 Teknologi Sistem Terintegrasi\\UAS\\TST_UAS_Kel7\\public\\index.php')
+ERROR - 2025-01-06 02:51:27 --> mysqli_sql_exception: Column 'semester' cannot be null in D:\MONICA\ITB\KULIAH\JURUSAN\SEMESTER 5\II3160 Teknologi Sistem Terintegrasi\UAS\TST_UAS_Kel7\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 D:\MONICA\ITB\KULIAH\JURUSAN\SEMESTER 5\II3160 Teknologi Sistem Terintegrasi\UAS\TST_UAS_Kel7\system\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `co...', 0)
+#1 D:\MONICA\ITB\KULIAH\JURUSAN\SEMESTER 5\II3160 Teknologi Sistem Terintegrasi\UAS\TST_UAS_Kel7\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `co...')
+#2 D:\MONICA\ITB\KULIAH\JURUSAN\SEMESTER 5\II3160 Teknologi Sistem Terintegrasi\UAS\TST_UAS_Kel7\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `co...')
+#3 D:\MONICA\ITB\KULIAH\JURUSAN\SEMESTER 5\II3160 Teknologi Sistem Terintegrasi\UAS\TST_UAS_Kel7\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `co...', Array, false)
+#4 D:\MONICA\ITB\KULIAH\JURUSAN\SEMESTER 5\II3160 Teknologi Sistem Terintegrasi\UAS\TST_UAS_Kel7\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 D:\MONICA\ITB\KULIAH\JURUSAN\SEMESTER 5\II3160 Teknologi Sistem Terintegrasi\UAS\TST_UAS_Kel7\system\BaseModel.php(839): CodeIgniter\Model->doInsert(Array)
+#6 D:\MONICA\ITB\KULIAH\JURUSAN\SEMESTER 5\II3160 Teknologi Sistem Terintegrasi\UAS\TST_UAS_Kel7\system\Model.php(802): CodeIgniter\BaseModel->insert(Array, false)
+#7 D:\MONICA\ITB\KULIAH\JURUSAN\SEMESTER 5\II3160 Teknologi Sistem Terintegrasi\UAS\TST_UAS_Kel7\system\BaseModel.php(750): CodeIgniter\Model->insert(Array, false)
+#8 D:\MONICA\ITB\KULIAH\JURUSAN\SEMESTER 5\II3160 Teknologi Sistem Terintegrasi\UAS\TST_UAS_Kel7\app\Controllers\Admin\EditCourseController.php(35): CodeIgniter\BaseModel->save(Array)
+#9 D:\MONICA\ITB\KULIAH\JURUSAN\SEMESTER 5\II3160 Teknologi Sistem Terintegrasi\UAS\TST_UAS_Kel7\system\CodeIgniter.php(933): App\Controllers\Admin\EditCourseController->create()
+#10 D:\MONICA\ITB\KULIAH\JURUSAN\SEMESTER 5\II3160 Teknologi Sistem Terintegrasi\UAS\TST_UAS_Kel7\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\EditCourseController))
+#11 D:\MONICA\ITB\KULIAH\JURUSAN\SEMESTER 5\II3160 Teknologi Sistem Terintegrasi\UAS\TST_UAS_Kel7\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 D:\MONICA\ITB\KULIAH\JURUSAN\SEMESTER 5\II3160 Teknologi Sistem Terintegrasi\UAS\TST_UAS_Kel7\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#13 D:\MONICA\ITB\KULIAH\JURUSAN\SEMESTER 5\II3160 Teknologi Sistem Terintegrasi\UAS\TST_UAS_Kel7\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#14 D:\MONICA\ITB\KULIAH\JURUSAN\SEMESTER 5\II3160 Teknologi Sistem Terintegrasi\UAS\TST_UAS_Kel7\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#15 D:\MONICA\ITB\KULIAH\JURUSAN\SEMESTER 5\II3160 Teknologi Sistem Terintegrasi\UAS\TST_UAS_Kel7\system\rewrite.php(44): require_once('D:\\MONICA\\ITB\\K...')
+#16 {main}
+CRITICAL - 2025-01-06 02:51:27 --> CodeIgniter\Database\Exceptions\DatabaseException: Column 'semester' cannot be null
+[Method: POST, Route: admin/courses]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `courses` (`course_name`, `credits`, `semester`, `day`, `start_time`, `duration`) VALUES (:course_name:, :credits:, :semester:, :day:, :start_time:, :duration:)', [...], false)
+ 2 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(839): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH\BaseModel.php(750): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH\Controllers\Admin\EditCourseController.php(35): CodeIgniter\BaseModel->save([...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\EditCourseController->create()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\EditCourseController))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('D:\\MONICA\\ITB\\KULIAH\\JURUSAN\\SEMESTER 5\\II3160 Teknologi Sistem Terintegrasi\\UAS\\TST_UAS_Kel7\\public\\index.php')
+CRITICAL - 2025-01-06 02:51:27 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Column 'semester' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `courses` (`course_name`, `credits`, `semester`, `day`, `start_time`, `duration`) VALUES (\'masuk\', \'2\', NULL, \'Senin\', \'10:00\', 100)')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `courses` (`course_name`, `credits`, `semester`, `day`, `start_time`, `duration`) VALUES (\'masuk\', \'2\', NULL, \'Senin\', \'10:00\', 100)')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `courses` (`course_name`, `credits`, `semester`, `day`, `start_time`, `duration`) VALUES (:course_name:, :credits:, :semester:, :day:, :start_time:, :duration:)', [...], false)
+ 4 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(839): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], false)
+ 7 SYSTEMPATH\BaseModel.php(750): CodeIgniter\Model->insert([...], false)
+ 8 APPPATH\Controllers\Admin\EditCourseController.php(35): CodeIgniter\BaseModel->save([...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\EditCourseController->create()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\EditCourseController))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('D:\\MONICA\\ITB\\KULIAH\\JURUSAN\\SEMESTER 5\\II3160 Teknologi Sistem Terintegrasi\\UAS\\TST_UAS_Kel7\\public\\index.php')
+CRITICAL - 2025-01-06 02:51:27 --> [Caused by] mysqli_sql_exception: Column 'semester' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `courses` (`course_name`, `credits`, `semester`, `day`, `start_time`, `duration`) VALUES (\'masuk\', \'2\', NULL, \'Senin\', \'10:00\', 100)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `courses` (`course_name`, `credits`, `semester`, `day`, `start_time`, `duration`) VALUES (\'masuk\', \'2\', NULL, \'Senin\', \'10:00\', 100)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `courses` (`course_name`, `credits`, `semester`, `day`, `start_time`, `duration`) VALUES (\'masuk\', \'2\', NULL, \'Senin\', \'10:00\', 100)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `courses` (`course_name`, `credits`, `semester`, `day`, `start_time`, `duration`) VALUES (:course_name:, :credits:, :semester:, :day:, :start_time:, :duration:)', [...], false)
+ 5 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(839): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], false)
+ 8 SYSTEMPATH\BaseModel.php(750): CodeIgniter\Model->insert([...], false)
+ 9 APPPATH\Controllers\Admin\EditCourseController.php(35): CodeIgniter\BaseModel->save([...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\EditCourseController->create()
+11 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\EditCourseController))
+12 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+16 SYSTEMPATH\rewrite.php(44): require_once('D:\\MONICA\\ITB\\KULIAH\\JURUSAN\\SEMESTER 5\\II3160 Teknologi Sistem Terintegrasi\\UAS\\TST_UAS_Kel7\\public\\index.php')
+ERROR - 2025-01-06 02:57:06 --> mysqli_sql_exception: Column 'semester' cannot be null in D:\MONICA\ITB\KULIAH\JURUSAN\SEMESTER 5\II3160 Teknologi Sistem Terintegrasi\UAS\TST_UAS_Kel7\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 D:\MONICA\ITB\KULIAH\JURUSAN\SEMESTER 5\II3160 Teknologi Sistem Terintegrasi\UAS\TST_UAS_Kel7\system\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `co...', 0)
+#1 D:\MONICA\ITB\KULIAH\JURUSAN\SEMESTER 5\II3160 Teknologi Sistem Terintegrasi\UAS\TST_UAS_Kel7\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `co...')
+#2 D:\MONICA\ITB\KULIAH\JURUSAN\SEMESTER 5\II3160 Teknologi Sistem Terintegrasi\UAS\TST_UAS_Kel7\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `co...')
+#3 D:\MONICA\ITB\KULIAH\JURUSAN\SEMESTER 5\II3160 Teknologi Sistem Terintegrasi\UAS\TST_UAS_Kel7\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `co...', Array, false)
+#4 D:\MONICA\ITB\KULIAH\JURUSAN\SEMESTER 5\II3160 Teknologi Sistem Terintegrasi\UAS\TST_UAS_Kel7\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 D:\MONICA\ITB\KULIAH\JURUSAN\SEMESTER 5\II3160 Teknologi Sistem Terintegrasi\UAS\TST_UAS_Kel7\system\BaseModel.php(839): CodeIgniter\Model->doInsert(Array)
+#6 D:\MONICA\ITB\KULIAH\JURUSAN\SEMESTER 5\II3160 Teknologi Sistem Terintegrasi\UAS\TST_UAS_Kel7\system\Model.php(802): CodeIgniter\BaseModel->insert(Array, false)
+#7 D:\MONICA\ITB\KULIAH\JURUSAN\SEMESTER 5\II3160 Teknologi Sistem Terintegrasi\UAS\TST_UAS_Kel7\system\BaseModel.php(750): CodeIgniter\Model->insert(Array, false)
+#8 D:\MONICA\ITB\KULIAH\JURUSAN\SEMESTER 5\II3160 Teknologi Sistem Terintegrasi\UAS\TST_UAS_Kel7\app\Controllers\Admin\EditCourseController.php(35): CodeIgniter\BaseModel->save(Array)
+#9 D:\MONICA\ITB\KULIAH\JURUSAN\SEMESTER 5\II3160 Teknologi Sistem Terintegrasi\UAS\TST_UAS_Kel7\system\CodeIgniter.php(933): App\Controllers\Admin\EditCourseController->create()
+#10 D:\MONICA\ITB\KULIAH\JURUSAN\SEMESTER 5\II3160 Teknologi Sistem Terintegrasi\UAS\TST_UAS_Kel7\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\EditCourseController))
+#11 D:\MONICA\ITB\KULIAH\JURUSAN\SEMESTER 5\II3160 Teknologi Sistem Terintegrasi\UAS\TST_UAS_Kel7\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 D:\MONICA\ITB\KULIAH\JURUSAN\SEMESTER 5\II3160 Teknologi Sistem Terintegrasi\UAS\TST_UAS_Kel7\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#13 D:\MONICA\ITB\KULIAH\JURUSAN\SEMESTER 5\II3160 Teknologi Sistem Terintegrasi\UAS\TST_UAS_Kel7\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#14 D:\MONICA\ITB\KULIAH\JURUSAN\SEMESTER 5\II3160 Teknologi Sistem Terintegrasi\UAS\TST_UAS_Kel7\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#15 D:\MONICA\ITB\KULIAH\JURUSAN\SEMESTER 5\II3160 Teknologi Sistem Terintegrasi\UAS\TST_UAS_Kel7\system\rewrite.php(44): require_once('D:\\MONICA\\ITB\\K...')
+#16 {main}
+CRITICAL - 2025-01-06 02:57:06 --> CodeIgniter\Database\Exceptions\DatabaseException: Column 'semester' cannot be null
+[Method: POST, Route: admin/courses]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `courses` (`course_name`, `credits`, `semester`, `day`, `start_time`, `duration`) VALUES (:course_name:, :credits:, :semester:, :day:, :start_time:, :duration:)', [...], false)
+ 2 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(839): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH\BaseModel.php(750): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH\Controllers\Admin\EditCourseController.php(35): CodeIgniter\BaseModel->save([...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\EditCourseController->create()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\EditCourseController))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('D:\\MONICA\\ITB\\KULIAH\\JURUSAN\\SEMESTER 5\\II3160 Teknologi Sistem Terintegrasi\\UAS\\TST_UAS_Kel7\\public\\index.php')
+CRITICAL - 2025-01-06 02:57:06 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Column 'semester' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `courses` (`course_name`, `credits`, `semester`, `day`, `start_time`, `duration`) VALUES (\'masuk\', \'2\', NULL, \'Senin\', \'10:00\', 100)')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `courses` (`course_name`, `credits`, `semester`, `day`, `start_time`, `duration`) VALUES (\'masuk\', \'2\', NULL, \'Senin\', \'10:00\', 100)')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `courses` (`course_name`, `credits`, `semester`, `day`, `start_time`, `duration`) VALUES (:course_name:, :credits:, :semester:, :day:, :start_time:, :duration:)', [...], false)
+ 4 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(839): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], false)
+ 7 SYSTEMPATH\BaseModel.php(750): CodeIgniter\Model->insert([...], false)
+ 8 APPPATH\Controllers\Admin\EditCourseController.php(35): CodeIgniter\BaseModel->save([...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\EditCourseController->create()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\EditCourseController))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('D:\\MONICA\\ITB\\KULIAH\\JURUSAN\\SEMESTER 5\\II3160 Teknologi Sistem Terintegrasi\\UAS\\TST_UAS_Kel7\\public\\index.php')
+CRITICAL - 2025-01-06 02:57:06 --> [Caused by] mysqli_sql_exception: Column 'semester' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `courses` (`course_name`, `credits`, `semester`, `day`, `start_time`, `duration`) VALUES (\'masuk\', \'2\', NULL, \'Senin\', \'10:00\', 100)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `courses` (`course_name`, `credits`, `semester`, `day`, `start_time`, `duration`) VALUES (\'masuk\', \'2\', NULL, \'Senin\', \'10:00\', 100)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `courses` (`course_name`, `credits`, `semester`, `day`, `start_time`, `duration`) VALUES (\'masuk\', \'2\', NULL, \'Senin\', \'10:00\', 100)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `courses` (`course_name`, `credits`, `semester`, `day`, `start_time`, `duration`) VALUES (:course_name:, :credits:, :semester:, :day:, :start_time:, :duration:)', [...], false)
+ 5 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(839): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], false)
+ 8 SYSTEMPATH\BaseModel.php(750): CodeIgniter\Model->insert([...], false)
+ 9 APPPATH\Controllers\Admin\EditCourseController.php(35): CodeIgniter\BaseModel->save([...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\EditCourseController->create()
+11 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\EditCourseController))
+12 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+16 SYSTEMPATH\rewrite.php(44): require_once('D:\\MONICA\\ITB\\KULIAH\\JURUSAN\\SEMESTER 5\\II3160 Teknologi Sistem Terintegrasi\\UAS\\TST_UAS_Kel7\\public\\index.php')
+DEBUG - 2025-01-06 03:00:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-01-06 03:00:48 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+DEBUG - 2025-01-06 03:00:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-01-06 03:00:58 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+DEBUG - 2025-01-06 03:00:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-01-06 03:01:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-01-06 13:10:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-01-06 13:10:14 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+DEBUG - 2025-01-06 13:10:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-01-06 13:10:18 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+DEBUG - 2025-01-06 13:10:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-01-06 13:10:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-01-06 13:10:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-01-06 13:10:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-01-06 13:10:53 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+DEBUG - 2025-01-06 13:10:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-01-06 13:10:54 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+DEBUG - 2025-01-06 13:10:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-01-06 13:10:59 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+DEBUG - 2025-01-06 13:10:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-01-06 13:11:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-01-06 13:11:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-01-06 13:12:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-01-06 13:12:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-01-06 13:13:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-01-06 13:13:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-01-06 13:16:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-01-06 13:16:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-01-06 13:16:49 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+DEBUG - 2025-01-06 13:16:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-01-06 13:16:49 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+DEBUG - 2025-01-06 13:17:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-01-06 13:17:08 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+DEBUG - 2025-01-06 13:17:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-01-06 13:20:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-01-06 13:20:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-01-06 13:21:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-01-06 13:21:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-01-06 13:28:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-01-06 13:28:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-01-06 13:28:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-01-06 13:28:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-01-06 13:29:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-01-06 13:29:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-01-06 13:29:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-01-06 13:29:30 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+DEBUG - 2025-01-06 13:29:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-01-06 13:29:30 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+DEBUG - 2025-01-06 13:29:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-01-06 13:29:32 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+DEBUG - 2025-01-06 13:29:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-01-06 13:29:36 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+DEBUG - 2025-01-06 13:29:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-01-06 13:29:37 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+DEBUG - 2025-01-06 13:30:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-01-06 13:30:41 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+DEBUG - 2025-01-06 13:30:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-01-06 13:30:45 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+DEBUG - 2025-01-06 13:30:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-01-06 13:31:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-01-06 13:31:45 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+DEBUG - 2025-01-06 13:31:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-01-06 13:31:45 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+DEBUG - 2025-01-06 13:31:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-01-06 13:31:46 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+DEBUG - 2025-01-06 13:37:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-01-06 13:37:51 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+DEBUG - 2025-01-06 13:37:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-01-06 13:37:52 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+DEBUG - 2025-01-06 13:37:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-01-06 13:37:56 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+DEBUG - 2025-01-06 13:37:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-01-06 13:37:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-01-06 13:37:57 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+DEBUG - 2025-01-06 13:39:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-01-06 13:39:40 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+DEBUG - 2025-01-06 13:39:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-01-06 13:39:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-01-06 13:39:41 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+DEBUG - 2025-01-06 13:39:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-01-06 13:39:58 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+DEBUG - 2025-01-06 13:39:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-01-06 13:39:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-01-06 13:39:59 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+DEBUG - 2025-01-06 13:40:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-01-06 13:40:22 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+DEBUG - 2025-01-06 13:40:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-01-06 13:40:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-01-06 13:40:23 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+DEBUG - 2025-01-06 13:40:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-01-06 13:40:37 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+DEBUG - 2025-01-06 13:40:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-01-06 13:40:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-01-06 13:40:38 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+DEBUG - 2025-01-06 13:40:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-01-06 13:40:56 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+DEBUG - 2025-01-06 13:40:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-01-06 13:41:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-01-06 13:41:44 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`pendidikan_microservices`.`students_courses`, CONSTRAINT `students_courses_ibfk_1` FOREIGN KEY (`course_id`) REFERENCES `courses` (`id`)) in D:\MONICA\ITB\KULIAH\JURUSAN\SEMESTER 5\II3160 Teknologi Sistem Terintegrasi\UAS\UAS TST MONIC UPDATED\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 D:\MONICA\ITB\KULIAH\JURUSAN\SEMESTER 5\II3160 Teknologi Sistem Terintegrasi\UAS\UAS TST MONIC UPDATED\system\Database\MySQLi\Connection.php(312): mysqli->query('DELETE FROM `co...', 0)
+#1 D:\MONICA\ITB\KULIAH\JURUSAN\SEMESTER 5\II3160 Teknologi Sistem Terintegrasi\UAS\UAS TST MONIC UPDATED\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `co...')
+#2 D:\MONICA\ITB\KULIAH\JURUSAN\SEMESTER 5\II3160 Teknologi Sistem Terintegrasi\UAS\UAS TST MONIC UPDATED\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `co...')
+#3 D:\MONICA\ITB\KULIAH\JURUSAN\SEMESTER 5\II3160 Teknologi Sistem Terintegrasi\UAS\UAS TST MONIC UPDATED\system\Database\BaseBuilder.php(2843): CodeIgniter\Database\BaseConnection->query('DELETE FROM `co...', Array, false)
+#4 D:\MONICA\ITB\KULIAH\JURUSAN\SEMESTER 5\II3160 Teknologi Sistem Terintegrasi\UAS\UAS TST MONIC UPDATED\system\Model.php(521): CodeIgniter\Database\BaseBuilder->delete()
+#5 D:\MONICA\ITB\KULIAH\JURUSAN\SEMESTER 5\II3160 Teknologi Sistem Terintegrasi\UAS\UAS TST MONIC UPDATED\system\BaseModel.php(1157): CodeIgniter\Model->doDelete(Array, false)
+#6 D:\MONICA\ITB\KULIAH\JURUSAN\SEMESTER 5\II3160 Teknologi Sistem Terintegrasi\UAS\UAS TST MONIC UPDATED\app\Controllers\Mahasiswa\EditCourseController.php(43): CodeIgniter\BaseModel->delete(Array)
+#7 D:\MONICA\ITB\KULIAH\JURUSAN\SEMESTER 5\II3160 Teknologi Sistem Terintegrasi\UAS\UAS TST MONIC UPDATED\system\CodeIgniter.php(933): App\Controllers\Mahasiswa\EditCourseController->delete('33')
+#8 D:\MONICA\ITB\KULIAH\JURUSAN\SEMESTER 5\II3160 Teknologi Sistem Terintegrasi\UAS\UAS TST MONIC UPDATED\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mahasiswa\EditCourseController))
+#9 D:\MONICA\ITB\KULIAH\JURUSAN\SEMESTER 5\II3160 Teknologi Sistem Terintegrasi\UAS\UAS TST MONIC UPDATED\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\MONICA\ITB\KULIAH\JURUSAN\SEMESTER 5\II3160 Teknologi Sistem Terintegrasi\UAS\UAS TST MONIC UPDATED\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#11 D:\MONICA\ITB\KULIAH\JURUSAN\SEMESTER 5\II3160 Teknologi Sistem Terintegrasi\UAS\UAS TST MONIC UPDATED\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 D:\MONICA\ITB\KULIAH\JURUSAN\SEMESTER 5\II3160 Teknologi Sistem Terintegrasi\UAS\UAS TST MONIC UPDATED\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 D:\MONICA\ITB\KULIAH\JURUSAN\SEMESTER 5\II3160 Teknologi Sistem Terintegrasi\UAS\UAS TST MONIC UPDATED\system\rewrite.php(44): require_once('D:\\MONICA\\ITB\\K...')
+#14 {main}
+CRITICAL - 2025-01-06 13:41:44 --> CodeIgniter\Database\Exceptions\DatabaseException: Cannot delete or update a parent row: a foreign key constraint fails (`pendidikan_microservices`.`students_courses`, CONSTRAINT `students_courses_ibfk_1` FOREIGN KEY (`course_id`) REFERENCES `courses` (`id`))
+[Method: DELETE, Route: mahasiswa/courses/33]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2843): CodeIgniter\Database\BaseConnection->query('DELETE FROM `courses`
+WHERE `id` IN :id:', [...], false)
+ 2 SYSTEMPATH\Model.php(521): CodeIgniter\Database\BaseBuilder->delete()
+ 3 SYSTEMPATH\BaseModel.php(1157): CodeIgniter\Model->doDelete([...], false)
+ 4 APPPATH\Controllers\Mahasiswa\EditCourseController.php(43): CodeIgniter\BaseModel->delete([...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Mahasiswa\EditCourseController->delete('33')
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mahasiswa\EditCourseController))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('D:\\MONICA\\ITB\\KULIAH\\JURUSAN\\SEMESTER 5\\II3160 Teknologi Sistem Terintegrasi\\UAS\\UAS TST MONIC UPDATED\\public\\index.php')
+CRITICAL - 2025-01-06 13:41:44 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Cannot delete or update a parent row: a foreign key constraint fails (`pendidikan_microservices`.`students_courses`, CONSTRAINT `students_courses_ibfk_1` FOREIGN KEY (`course_id`) REFERENCES `courses` (`id`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `courses`
+WHERE `id` IN (\'33\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `courses`
+WHERE `id` IN (\'33\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2843): CodeIgniter\Database\BaseConnection->query('DELETE FROM `courses`
+WHERE `id` IN :id:', [...], false)
+ 4 SYSTEMPATH\Model.php(521): CodeIgniter\Database\BaseBuilder->delete()
+ 5 SYSTEMPATH\BaseModel.php(1157): CodeIgniter\Model->doDelete([...], false)
+ 6 APPPATH\Controllers\Mahasiswa\EditCourseController.php(43): CodeIgniter\BaseModel->delete([...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Mahasiswa\EditCourseController->delete('33')
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mahasiswa\EditCourseController))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('D:\\MONICA\\ITB\\KULIAH\\JURUSAN\\SEMESTER 5\\II3160 Teknologi Sistem Terintegrasi\\UAS\\UAS TST MONIC UPDATED\\public\\index.php')
+CRITICAL - 2025-01-06 13:41:44 --> [Caused by] mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`pendidikan_microservices`.`students_courses`, CONSTRAINT `students_courses_ibfk_1` FOREIGN KEY (`course_id`) REFERENCES `courses` (`id`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('DELETE FROM `courses`
+WHERE `id` IN (\'33\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `courses`
+WHERE `id` IN (\'33\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `courses`
+WHERE `id` IN (\'33\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2843): CodeIgniter\Database\BaseConnection->query('DELETE FROM `courses`
+WHERE `id` IN :id:', [...], false)
+ 5 SYSTEMPATH\Model.php(521): CodeIgniter\Database\BaseBuilder->delete()
+ 6 SYSTEMPATH\BaseModel.php(1157): CodeIgniter\Model->doDelete([...], false)
+ 7 APPPATH\Controllers\Mahasiswa\EditCourseController.php(43): CodeIgniter\BaseModel->delete([...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Mahasiswa\EditCourseController->delete('33')
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mahasiswa\EditCourseController))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('D:\\MONICA\\ITB\\KULIAH\\JURUSAN\\SEMESTER 5\\II3160 Teknologi Sistem Terintegrasi\\UAS\\UAS TST MONIC UPDATED\\public\\index.php')
+DEBUG - 2025-01-06 13:41:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-01-06 13:42:17 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`pendidikan_microservices`.`students_courses`, CONSTRAINT `students_courses_ibfk_1` FOREIGN KEY (`course_id`) REFERENCES `courses` (`id`)) in D:\MONICA\ITB\KULIAH\JURUSAN\SEMESTER 5\II3160 Teknologi Sistem Terintegrasi\UAS\UAS TST MONIC UPDATED\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 D:\MONICA\ITB\KULIAH\JURUSAN\SEMESTER 5\II3160 Teknologi Sistem Terintegrasi\UAS\UAS TST MONIC UPDATED\system\Database\MySQLi\Connection.php(312): mysqli->query('DELETE FROM `co...', 0)
+#1 D:\MONICA\ITB\KULIAH\JURUSAN\SEMESTER 5\II3160 Teknologi Sistem Terintegrasi\UAS\UAS TST MONIC UPDATED\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `co...')
+#2 D:\MONICA\ITB\KULIAH\JURUSAN\SEMESTER 5\II3160 Teknologi Sistem Terintegrasi\UAS\UAS TST MONIC UPDATED\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `co...')
+#3 D:\MONICA\ITB\KULIAH\JURUSAN\SEMESTER 5\II3160 Teknologi Sistem Terintegrasi\UAS\UAS TST MONIC UPDATED\system\Database\BaseBuilder.php(2843): CodeIgniter\Database\BaseConnection->query('DELETE FROM `co...', Array, false)
+#4 D:\MONICA\ITB\KULIAH\JURUSAN\SEMESTER 5\II3160 Teknologi Sistem Terintegrasi\UAS\UAS TST MONIC UPDATED\system\Model.php(521): CodeIgniter\Database\BaseBuilder->delete()
+#5 D:\MONICA\ITB\KULIAH\JURUSAN\SEMESTER 5\II3160 Teknologi Sistem Terintegrasi\UAS\UAS TST MONIC UPDATED\system\BaseModel.php(1157): CodeIgniter\Model->doDelete(Array, false)
+#6 D:\MONICA\ITB\KULIAH\JURUSAN\SEMESTER 5\II3160 Teknologi Sistem Terintegrasi\UAS\UAS TST MONIC UPDATED\app\Controllers\Mahasiswa\EditCourseController.php(43): CodeIgniter\BaseModel->delete(Array)
+#7 D:\MONICA\ITB\KULIAH\JURUSAN\SEMESTER 5\II3160 Teknologi Sistem Terintegrasi\UAS\UAS TST MONIC UPDATED\system\CodeIgniter.php(933): App\Controllers\Mahasiswa\EditCourseController->delete('38')
+#8 D:\MONICA\ITB\KULIAH\JURUSAN\SEMESTER 5\II3160 Teknologi Sistem Terintegrasi\UAS\UAS TST MONIC UPDATED\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mahasiswa\EditCourseController))
+#9 D:\MONICA\ITB\KULIAH\JURUSAN\SEMESTER 5\II3160 Teknologi Sistem Terintegrasi\UAS\UAS TST MONIC UPDATED\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\MONICA\ITB\KULIAH\JURUSAN\SEMESTER 5\II3160 Teknologi Sistem Terintegrasi\UAS\UAS TST MONIC UPDATED\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#11 D:\MONICA\ITB\KULIAH\JURUSAN\SEMESTER 5\II3160 Teknologi Sistem Terintegrasi\UAS\UAS TST MONIC UPDATED\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 D:\MONICA\ITB\KULIAH\JURUSAN\SEMESTER 5\II3160 Teknologi Sistem Terintegrasi\UAS\UAS TST MONIC UPDATED\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 D:\MONICA\ITB\KULIAH\JURUSAN\SEMESTER 5\II3160 Teknologi Sistem Terintegrasi\UAS\UAS TST MONIC UPDATED\system\rewrite.php(44): require_once('D:\\MONICA\\ITB\\K...')
+#14 {main}
+CRITICAL - 2025-01-06 13:42:17 --> CodeIgniter\Database\Exceptions\DatabaseException: Cannot delete or update a parent row: a foreign key constraint fails (`pendidikan_microservices`.`students_courses`, CONSTRAINT `students_courses_ibfk_1` FOREIGN KEY (`course_id`) REFERENCES `courses` (`id`))
+[Method: DELETE, Route: mahasiswa/courses/38]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2843): CodeIgniter\Database\BaseConnection->query('DELETE FROM `courses`
+WHERE `id` IN :id:', [...], false)
+ 2 SYSTEMPATH\Model.php(521): CodeIgniter\Database\BaseBuilder->delete()
+ 3 SYSTEMPATH\BaseModel.php(1157): CodeIgniter\Model->doDelete([...], false)
+ 4 APPPATH\Controllers\Mahasiswa\EditCourseController.php(43): CodeIgniter\BaseModel->delete([...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Mahasiswa\EditCourseController->delete('38')
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mahasiswa\EditCourseController))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('D:\\MONICA\\ITB\\KULIAH\\JURUSAN\\SEMESTER 5\\II3160 Teknologi Sistem Terintegrasi\\UAS\\UAS TST MONIC UPDATED\\public\\index.php')
+CRITICAL - 2025-01-06 13:42:17 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Cannot delete or update a parent row: a foreign key constraint fails (`pendidikan_microservices`.`students_courses`, CONSTRAINT `students_courses_ibfk_1` FOREIGN KEY (`course_id`) REFERENCES `courses` (`id`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `courses`
+WHERE `id` IN (\'38\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `courses`
+WHERE `id` IN (\'38\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2843): CodeIgniter\Database\BaseConnection->query('DELETE FROM `courses`
+WHERE `id` IN :id:', [...], false)
+ 4 SYSTEMPATH\Model.php(521): CodeIgniter\Database\BaseBuilder->delete()
+ 5 SYSTEMPATH\BaseModel.php(1157): CodeIgniter\Model->doDelete([...], false)
+ 6 APPPATH\Controllers\Mahasiswa\EditCourseController.php(43): CodeIgniter\BaseModel->delete([...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Mahasiswa\EditCourseController->delete('38')
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mahasiswa\EditCourseController))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('D:\\MONICA\\ITB\\KULIAH\\JURUSAN\\SEMESTER 5\\II3160 Teknologi Sistem Terintegrasi\\UAS\\UAS TST MONIC UPDATED\\public\\index.php')
+CRITICAL - 2025-01-06 13:42:17 --> [Caused by] mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`pendidikan_microservices`.`students_courses`, CONSTRAINT `students_courses_ibfk_1` FOREIGN KEY (`course_id`) REFERENCES `courses` (`id`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('DELETE FROM `courses`
+WHERE `id` IN (\'38\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `courses`
+WHERE `id` IN (\'38\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `courses`
+WHERE `id` IN (\'38\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2843): CodeIgniter\Database\BaseConnection->query('DELETE FROM `courses`
+WHERE `id` IN :id:', [...], false)
+ 5 SYSTEMPATH\Model.php(521): CodeIgniter\Database\BaseBuilder->delete()
+ 6 SYSTEMPATH\BaseModel.php(1157): CodeIgniter\Model->doDelete([...], false)
+ 7 APPPATH\Controllers\Mahasiswa\EditCourseController.php(43): CodeIgniter\BaseModel->delete([...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Mahasiswa\EditCourseController->delete('38')
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mahasiswa\EditCourseController))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('D:\\MONICA\\ITB\\KULIAH\\JURUSAN\\SEMESTER 5\\II3160 Teknologi Sistem Terintegrasi\\UAS\\UAS TST MONIC UPDATED\\public\\index.php')
+DEBUG - 2025-01-06 13:42:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-01-06 13:42:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-01-06 13:42:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-01-06 13:42:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-01-06 13:42:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-01-06 13:42:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-01-06 13:42:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-01-06 13:42:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-01-06 13:42:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-01-06 13:42:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-01-06 13:42:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-01-06 13:42:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-01-06 13:42:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-01-06 13:42:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-01-06 13:42:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-01-06 13:42:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-01-06 13:43:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-01-06 13:43:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-01-06 13:43:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-01-06 13:43:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-01-06 13:43:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-01-06 13:43:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-01-06 13:43:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-01-06 13:43:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-01-06 13:43:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-01-06 13:43:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-01-06 13:43:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-01-06 13:43:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-01-06 13:43:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-01-06 13:43:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-01-06 13:43:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-01-06 13:43:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-01-06 13:43:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-01-06 13:43:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-01-06 13:43:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-01-06 13:48:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-01-06 13:48:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-01-06 13:49:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-01-06 13:49:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-01-06 13:50:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-01-06 13:50:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-01-06 13:50:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-01-06 13:50:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-01-06 13:50:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-01-06 13:50:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-01-06 13:50:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-01-06 13:50:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-01-06 13:50:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-01-06 13:50:56 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+DEBUG - 2025-01-06 13:50:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-01-06 13:50:56 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+DEBUG - 2025-01-06 13:51:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-01-06 13:51:05 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+DEBUG - 2025-01-06 13:51:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-01-06 13:51:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-01-06 13:51:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-01-06 13:51:14 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+DEBUG - 2025-01-06 13:51:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-01-06 13:51:14 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+DEBUG - 2025-01-06 13:54:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-01-06 13:54:38 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+DEBUG - 2025-01-06 13:54:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-01-06 13:54:43 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+DEBUG - 2025-01-06 13:54:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-01-06 13:55:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-01-06 13:55:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-01-06 13:55:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-01-06 13:55:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-01-06 13:55:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-01-06 13:55:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-01-06 13:55:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-01-06 13:55:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-01-06 13:55:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-01-06 13:55:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-01-06 13:55:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-01-06 13:58:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-01-06 13:58:56 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+DEBUG - 2025-01-06 13:58:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-01-06 13:58:58 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+DEBUG - 2025-01-06 13:58:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-01-06 13:59:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-01-06 13:59:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-01-06 13:59:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-01-06 13:59:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-01-06 13:59:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-01-06 13:59:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-01-06 13:59:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-01-06 13:59:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-01-06 13:59:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-01-06 13:59:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-01-06 13:59:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-01-06 13:59:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-01-06 13:59:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-01-06 13:59:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-01-06 13:59:39 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+DEBUG - 2025-01-06 13:59:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-01-06 13:59:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-01-06 13:59:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-01-06 15:21:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-01-06 15:21:22 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+DEBUG - 2025-01-06 15:21:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-01-06 15:21:29 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+DEBUG - 2025-01-06 15:21:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-01-06 15:21:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-01-06 15:21:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-01-06 15:21:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-01-06 15:21:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-01-06 15:21:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-01-06 15:21:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-01-06 15:22:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-01-06 15:22:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-01-06 15:22:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-01-06 15:22:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-01-06 15:22:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

@@ -1,0 +1,81 @@
+DEBUG - 2024-11-25 14:40:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-25 14:40:18 --> TypeError: App\Controllers\Home::index(): Return value must be of type string, CodeIgniter\HTTP\RedirectResponse returned
+[Method: GET, Route: /]
+in APPPATH\Controllers\Home.php on line 11.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('D:\\TST\\Latihan1\\CodeIgniter4-develop\\public\\index.php')
+ERROR - 2024-11-25 15:03:20 --> mysqli_sql_exception: Table 'foodmart.users' doesn't exist in D:\TST\Latihan1\CodeIgniter4-develop\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 D:\TST\Latihan1\CodeIgniter4-develop\system\Database\MySQLi\Connection.php(312): mysqli->query('SELECT name FRO...', 0)
+#1 D:\TST\Latihan1\CodeIgniter4-develop\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT name FRO...')
+#2 D:\TST\Latihan1\CodeIgniter4-develop\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT name FRO...')
+#3 D:\TST\Latihan1\CodeIgniter4-develop\app\Models\CustomerAuth.php(10): CodeIgniter\Database\BaseConnection->query('SELECT name FRO...')
+#4 D:\TST\Latihan1\CodeIgniter4-develop\app\Controllers\CustomerAPI.php(12): App\Models\CustomerAuth->getDataAuthentication('admin', '1a0c2bfbc89e2ec...')
+#5 D:\TST\Latihan1\CodeIgniter4-develop\system\CodeIgniter.php(933): App\Controllers\CustomerAPI->index('admin', 'password baru')
+#6 D:\TST\Latihan1\CodeIgniter4-develop\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CustomerAPI))
+#7 D:\TST\Latihan1\CodeIgniter4-develop\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\TST\Latihan1\CodeIgniter4-develop\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#9 D:\TST\Latihan1\CodeIgniter4-develop\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 D:\TST\Latihan1\CodeIgniter4-develop\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 D:\TST\Latihan1\CodeIgniter4-develop\system\rewrite.php(44): require_once('D:\\TST\\Latihan1...')
+#12 {main}
+CRITICAL - 2024-11-25 15:03:20 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'foodmart.users' doesn't exist
+[Method: GET, Route: customerAPI/admin/password%20baru]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 APPPATH\Models\CustomerAuth.php(10): CodeIgniter\Database\BaseConnection->query('SELECT name FROM users 
+        WHERE username = "admin"
+        AND password = "1a0c2bfbc89e2ecfa4a9aff4fa68a63e"')
+ 2 APPPATH\Controllers\CustomerAPI.php(12): App\Models\CustomerAuth->getDataAuthentication('admin', '1a0c2bfbc89e2ecfa4a9aff4fa68a63e')
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\CustomerAPI->index('admin', 'password baru')
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CustomerAPI))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('D:\\TST\\Latihan1\\CodeIgniter4-develop\\public\\index.php')
+CRITICAL - 2024-11-25 15:03:20 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'foodmart.users' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT name FROM users 
+        WHERE username = "admin"
+        AND password = "1a0c2bfbc89e2ecfa4a9aff4fa68a63e"')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT name FROM users 
+        WHERE username = "admin"
+        AND password = "1a0c2bfbc89e2ecfa4a9aff4fa68a63e"')
+ 3 APPPATH\Models\CustomerAuth.php(10): CodeIgniter\Database\BaseConnection->query('SELECT name FROM users 
+        WHERE username = "admin"
+        AND password = "1a0c2bfbc89e2ecfa4a9aff4fa68a63e"')
+ 4 APPPATH\Controllers\CustomerAPI.php(12): App\Models\CustomerAuth->getDataAuthentication('admin', '1a0c2bfbc89e2ecfa4a9aff4fa68a63e')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\CustomerAPI->index('admin', 'password baru')
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CustomerAPI))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('D:\\TST\\Latihan1\\CodeIgniter4-develop\\public\\index.php')
+CRITICAL - 2024-11-25 15:03:20 --> [Caused by] mysqli_sql_exception: Table 'foodmart.users' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('SELECT name FROM users 
+        WHERE username = "admin"
+        AND password = "1a0c2bfbc89e2ecfa4a9aff4fa68a63e"', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT name FROM users 
+        WHERE username = "admin"
+        AND password = "1a0c2bfbc89e2ecfa4a9aff4fa68a63e"')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT name FROM users 
+        WHERE username = "admin"
+        AND password = "1a0c2bfbc89e2ecfa4a9aff4fa68a63e"')
+ 4 APPPATH\Models\CustomerAuth.php(10): CodeIgniter\Database\BaseConnection->query('SELECT name FROM users 
+        WHERE username = "admin"
+        AND password = "1a0c2bfbc89e2ecfa4a9aff4fa68a63e"')
+ 5 APPPATH\Controllers\CustomerAPI.php(12): App\Models\CustomerAuth->getDataAuthentication('admin', '1a0c2bfbc89e2ecfa4a9aff4fa68a63e')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\CustomerAPI->index('admin', 'password baru')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CustomerAPI))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\TST\\Latihan1\\CodeIgniter4-develop\\public\\index.php')

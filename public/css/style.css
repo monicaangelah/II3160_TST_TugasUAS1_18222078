@@ -1,0 +1,46 @@
+body {
+    background-color: #f8f9fa;
+}
+
+.card {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Container untuk tombol logout */
+.logout-container {
+    position: absolute;
+    bottom: 30px; /* Jarak dari bawah */
+    left: 50%; /* Posisi horizontal tengah */
+    transform: translateX(-50%); /* Menengahkan secara sempurna */
+    text-align: center;
+}
+
+/* Tombol Logout */
+.logout-btn {
+    padding: 10px 20px;
+    text-decoration: none;
+    color: white;
+    background-color: #dc3545; /* Warna tombol */
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.logout-btn:hover {
+    background-color: #c82333; /* Warna hover */
+}
+
+/* Pastikan halaman memiliki tinggi penuh */
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* Pastikan elemen utama mengisi tinggi halaman */
+.container {
+    position: relative;
+    min-height: 100%;
+    padding-bottom: 60px; /* Tambahkan padding untuk ruang bawah */
+}

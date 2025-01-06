@@ -1,0 +1,652 @@
+ERROR - 2024-12-28 11:44:39 --> mysqli_sql_exception: Table 'pendidikan_microservices.enrollments' doesn't exist in D:\TST - Copy\Latihan1\CodeIgniter4-develop\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 D:\TST - Copy\Latihan1\CodeIgniter4-develop\system\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `en...', 0)
+#1 D:\TST - Copy\Latihan1\CodeIgniter4-develop\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `en...')
+#2 D:\TST - Copy\Latihan1\CodeIgniter4-develop\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `en...')
+#3 D:\TST - Copy\Latihan1\CodeIgniter4-develop\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `en...', Array, false)
+#4 D:\TST - Copy\Latihan1\CodeIgniter4-develop\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 D:\TST - Copy\Latihan1\CodeIgniter4-develop\system\BaseModel.php(839): CodeIgniter\Model->doInsert(Array)
+#6 D:\TST - Copy\Latihan1\CodeIgniter4-develop\system\Model.php(802): CodeIgniter\BaseModel->insert(Array, true)
+#7 D:\TST - Copy\Latihan1\CodeIgniter4-develop\app\Controllers\Pendaftaran\MataKuliahController.php(27): CodeIgniter\Model->insert(Array)
+#8 D:\TST - Copy\Latihan1\CodeIgniter4-develop\system\CodeIgniter.php(933): App\Controllers\Pendaftaran\MataKuliahController->tambah()
+#9 D:\TST - Copy\Latihan1\CodeIgniter4-develop\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pendaftaran\MataKuliahController))
+#10 D:\TST - Copy\Latihan1\CodeIgniter4-develop\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\TST - Copy\Latihan1\CodeIgniter4-develop\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#12 D:\TST - Copy\Latihan1\CodeIgniter4-develop\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 D:\TST - Copy\Latihan1\CodeIgniter4-develop\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 D:\TST - Copy\Latihan1\CodeIgniter4-develop\system\rewrite.php(44): require_once('D:\\TST - Copy\\L...')
+#15 {main}
+CRITICAL - 2024-12-28 11:44:39 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'pendidikan_microservices.enrollments' doesn't exist
+[Method: POST, Route: mahasiswa/mata-kuliah]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `enrollments` (`student_id`, `course_id`) VALUES (:student_id:, :course_id:)', [...], false)
+ 2 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(839): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\Pendaftaran\MataKuliahController.php(27): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pendaftaran\MataKuliahController->tambah()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pendaftaran\MataKuliahController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\TST - Copy\\Latihan1\\CodeIgniter4-develop\\public\\index.php')
+CRITICAL - 2024-12-28 11:44:39 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'pendidikan_microservices.enrollments' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `enrollments` (`student_id`, `course_id`) VALUES (NULL, NULL)')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `enrollments` (`student_id`, `course_id`) VALUES (NULL, NULL)')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `enrollments` (`student_id`, `course_id`) VALUES (:student_id:, :course_id:)', [...], false)
+ 4 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(839): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Controllers\Pendaftaran\MataKuliahController.php(27): CodeIgniter\Model->insert([...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pendaftaran\MataKuliahController->tambah()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pendaftaran\MataKuliahController))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('D:\\TST - Copy\\Latihan1\\CodeIgniter4-develop\\public\\index.php')
+CRITICAL - 2024-12-28 11:44:39 --> [Caused by] mysqli_sql_exception: Table 'pendidikan_microservices.enrollments' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `enrollments` (`student_id`, `course_id`) VALUES (NULL, NULL)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `enrollments` (`student_id`, `course_id`) VALUES (NULL, NULL)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `enrollments` (`student_id`, `course_id`) VALUES (NULL, NULL)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `enrollments` (`student_id`, `course_id`) VALUES (:student_id:, :course_id:)', [...], false)
+ 5 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(839): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Pendaftaran\MataKuliahController.php(27): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pendaftaran\MataKuliahController->tambah()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pendaftaran\MataKuliahController))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('D:\\TST - Copy\\Latihan1\\CodeIgniter4-develop\\public\\index.php')
+CRITICAL - 2024-12-28 12:15:33 --> Error: Class "App\Models\EnrollmentModel" not found
+[Method: POST, Route: mahasiswa/mata-kuliah]
+in APPPATH\Controllers\Pendaftaran\MataKuliahController.php on line 26.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pendaftaran\MataKuliahController->tambah()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pendaftaran\MataKuliahController))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('D:\\TST - Copy\\Latihan1\\CodeIgniter4-develop\\public\\index.php')
+CRITICAL - 2024-12-28 12:16:27 --> Error: Class "App\Models\EnrollmentModel" not found
+[Method: POST, Route: mahasiswa/mata-kuliah]
+in APPPATH\Controllers\Pendaftaran\MataKuliahController.php on line 26.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pendaftaran\MataKuliahController->tambah()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pendaftaran\MataKuliahController))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('D:\\TST - Copy\\Latihan1\\CodeIgniter4-develop\\public\\index.php')
+CRITICAL - 2024-12-28 12:17:18 --> Error: Class "App\Controllers\Pendaftaran\StudentsCoursesModel" not found
+[Method: POST, Route: mahasiswa/mata-kuliah]
+in APPPATH\Controllers\Pendaftaran\MataKuliahController.php on line 27.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pendaftaran\MataKuliahController->tambah()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pendaftaran\MataKuliahController))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('D:\\TST - Copy\\Latihan1\\CodeIgniter4-develop\\public\\index.php')
+ERROR - 2024-12-28 12:18:49 --> mysqli_sql_exception: Table 'pendidikan_microservices.students_courses' doesn't exist in D:\TST - Copy\Latihan1\CodeIgniter4-develop\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 D:\TST - Copy\Latihan1\CodeIgniter4-develop\system\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `st...', 0)
+#1 D:\TST - Copy\Latihan1\CodeIgniter4-develop\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `st...')
+#2 D:\TST - Copy\Latihan1\CodeIgniter4-develop\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `st...')
+#3 D:\TST - Copy\Latihan1\CodeIgniter4-develop\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `st...', Array, false)
+#4 D:\TST - Copy\Latihan1\CodeIgniter4-develop\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 D:\TST - Copy\Latihan1\CodeIgniter4-develop\system\BaseModel.php(839): CodeIgniter\Model->doInsert(Array)
+#6 D:\TST - Copy\Latihan1\CodeIgniter4-develop\system\Model.php(802): CodeIgniter\BaseModel->insert(Array, true)
+#7 D:\TST - Copy\Latihan1\CodeIgniter4-develop\app\Controllers\Pendaftaran\MataKuliahController.php(28): CodeIgniter\Model->insert(Array)
+#8 D:\TST - Copy\Latihan1\CodeIgniter4-develop\system\CodeIgniter.php(933): App\Controllers\Pendaftaran\MataKuliahController->tambah()
+#9 D:\TST - Copy\Latihan1\CodeIgniter4-develop\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pendaftaran\MataKuliahController))
+#10 D:\TST - Copy\Latihan1\CodeIgniter4-develop\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\TST - Copy\Latihan1\CodeIgniter4-develop\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#12 D:\TST - Copy\Latihan1\CodeIgniter4-develop\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 D:\TST - Copy\Latihan1\CodeIgniter4-develop\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 D:\TST - Copy\Latihan1\CodeIgniter4-develop\system\rewrite.php(44): require_once('D:\\TST - Copy\\L...')
+#15 {main}
+CRITICAL - 2024-12-28 12:18:49 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'pendidikan_microservices.students_courses' doesn't exist
+[Method: POST, Route: mahasiswa/mata-kuliah]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `students_courses` (`student_id`, `course_id`, `semester`) VALUES (:student_id:, :course_id:, :semester:)', [...], false)
+ 2 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(839): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\Pendaftaran\MataKuliahController.php(28): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pendaftaran\MataKuliahController->tambah()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pendaftaran\MataKuliahController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\TST - Copy\\Latihan1\\CodeIgniter4-develop\\public\\index.php')
+CRITICAL - 2024-12-28 12:18:49 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'pendidikan_microservices.students_courses' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `students_courses` (`student_id`, `course_id`, `semester`) VALUES (NULL, NULL, NULL)')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `students_courses` (`student_id`, `course_id`, `semester`) VALUES (NULL, NULL, NULL)')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `students_courses` (`student_id`, `course_id`, `semester`) VALUES (:student_id:, :course_id:, :semester:)', [...], false)
+ 4 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(839): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Controllers\Pendaftaran\MataKuliahController.php(28): CodeIgniter\Model->insert([...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pendaftaran\MataKuliahController->tambah()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pendaftaran\MataKuliahController))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('D:\\TST - Copy\\Latihan1\\CodeIgniter4-develop\\public\\index.php')
+CRITICAL - 2024-12-28 12:18:49 --> [Caused by] mysqli_sql_exception: Table 'pendidikan_microservices.students_courses' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `students_courses` (`student_id`, `course_id`, `semester`) VALUES (NULL, NULL, NULL)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `students_courses` (`student_id`, `course_id`, `semester`) VALUES (NULL, NULL, NULL)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `students_courses` (`student_id`, `course_id`, `semester`) VALUES (NULL, NULL, NULL)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `students_courses` (`student_id`, `course_id`, `semester`) VALUES (:student_id:, :course_id:, :semester:)', [...], false)
+ 5 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(839): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Pendaftaran\MataKuliahController.php(28): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pendaftaran\MataKuliahController->tambah()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pendaftaran\MataKuliahController))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('D:\\TST - Copy\\Latihan1\\CodeIgniter4-develop\\public\\index.php')
+ERROR - 2024-12-28 12:19:45 --> mysqli_sql_exception: Column 'student_id' cannot be null in D:\TST - Copy\Latihan1\CodeIgniter4-develop\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 D:\TST - Copy\Latihan1\CodeIgniter4-develop\system\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `st...', 0)
+#1 D:\TST - Copy\Latihan1\CodeIgniter4-develop\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `st...')
+#2 D:\TST - Copy\Latihan1\CodeIgniter4-develop\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `st...')
+#3 D:\TST - Copy\Latihan1\CodeIgniter4-develop\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `st...', Array, false)
+#4 D:\TST - Copy\Latihan1\CodeIgniter4-develop\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 D:\TST - Copy\Latihan1\CodeIgniter4-develop\system\BaseModel.php(839): CodeIgniter\Model->doInsert(Array)
+#6 D:\TST - Copy\Latihan1\CodeIgniter4-develop\system\Model.php(802): CodeIgniter\BaseModel->insert(Array, true)
+#7 D:\TST - Copy\Latihan1\CodeIgniter4-develop\app\Controllers\Pendaftaran\MataKuliahController.php(28): CodeIgniter\Model->insert(Array)
+#8 D:\TST - Copy\Latihan1\CodeIgniter4-develop\system\CodeIgniter.php(933): App\Controllers\Pendaftaran\MataKuliahController->tambah()
+#9 D:\TST - Copy\Latihan1\CodeIgniter4-develop\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pendaftaran\MataKuliahController))
+#10 D:\TST - Copy\Latihan1\CodeIgniter4-develop\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\TST - Copy\Latihan1\CodeIgniter4-develop\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#12 D:\TST - Copy\Latihan1\CodeIgniter4-develop\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 D:\TST - Copy\Latihan1\CodeIgniter4-develop\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 D:\TST - Copy\Latihan1\CodeIgniter4-develop\system\rewrite.php(44): require_once('D:\\TST - Copy\\L...')
+#15 {main}
+CRITICAL - 2024-12-28 12:19:45 --> CodeIgniter\Database\Exceptions\DatabaseException: Column 'student_id' cannot be null
+[Method: POST, Route: mahasiswa/mata-kuliah]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `students_courses` (`student_id`, `course_id`, `semester`) VALUES (:student_id:, :course_id:, :semester:)', [...], false)
+ 2 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(839): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\Pendaftaran\MataKuliahController.php(28): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pendaftaran\MataKuliahController->tambah()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pendaftaran\MataKuliahController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\TST - Copy\\Latihan1\\CodeIgniter4-develop\\public\\index.php')
+CRITICAL - 2024-12-28 12:19:45 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Column 'student_id' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `students_courses` (`student_id`, `course_id`, `semester`) VALUES (NULL, NULL, NULL)')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `students_courses` (`student_id`, `course_id`, `semester`) VALUES (NULL, NULL, NULL)')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `students_courses` (`student_id`, `course_id`, `semester`) VALUES (:student_id:, :course_id:, :semester:)', [...], false)
+ 4 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(839): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Controllers\Pendaftaran\MataKuliahController.php(28): CodeIgniter\Model->insert([...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pendaftaran\MataKuliahController->tambah()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pendaftaran\MataKuliahController))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('D:\\TST - Copy\\Latihan1\\CodeIgniter4-develop\\public\\index.php')
+CRITICAL - 2024-12-28 12:19:45 --> [Caused by] mysqli_sql_exception: Column 'student_id' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `students_courses` (`student_id`, `course_id`, `semester`) VALUES (NULL, NULL, NULL)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `students_courses` (`student_id`, `course_id`, `semester`) VALUES (NULL, NULL, NULL)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `students_courses` (`student_id`, `course_id`, `semester`) VALUES (NULL, NULL, NULL)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `students_courses` (`student_id`, `course_id`, `semester`) VALUES (:student_id:, :course_id:, :semester:)', [...], false)
+ 5 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(839): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Pendaftaran\MataKuliahController.php(28): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pendaftaran\MataKuliahController->tambah()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pendaftaran\MataKuliahController))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('D:\\TST - Copy\\Latihan1\\CodeIgniter4-develop\\public\\index.php')
+CRITICAL - 2024-12-28 13:22:08 --> Error: Class "App\Models\StudentsModel" not found
+[Method: GET, Route: mahasiswa/profil/1]
+in APPPATH\Controllers\Mahasiswa\ProfilController.php on line 14.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Mahasiswa\ProfilController->index('1')
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mahasiswa\ProfilController))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('D:\\TST - Copy\\Latihan1\\CodeIgniter4-develop\\public\\index.php')
+ERROR - 2024-12-28 13:24:25 --> mysqli_sql_exception: Unknown column 'students_courses.grade' in 'field list' in D:\TST - Copy\Latihan1\CodeIgniter4-develop\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 D:\TST - Copy\Latihan1\CodeIgniter4-develop\system\Database\MySQLi\Connection.php(312): mysqli->query('SELECT `student...', 0)
+#1 D:\TST - Copy\Latihan1\CodeIgniter4-develop\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `student...')
+#2 D:\TST - Copy\Latihan1\CodeIgniter4-develop\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `student...')
+#3 D:\TST - Copy\Latihan1\CodeIgniter4-develop\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `student...', Array, false)
+#4 D:\TST - Copy\Latihan1\CodeIgniter4-develop\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\TST - Copy\Latihan1\CodeIgniter4-develop\system\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\TST - Copy\Latihan1\CodeIgniter4-develop\app\Controllers\Mahasiswa\ProfilController.php(32): CodeIgniter\BaseModel->findAll()
+#7 D:\TST - Copy\Latihan1\CodeIgniter4-develop\system\CodeIgniter.php(933): App\Controllers\Mahasiswa\ProfilController->index('1')
+#8 D:\TST - Copy\Latihan1\CodeIgniter4-develop\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mahasiswa\ProfilController))
+#9 D:\TST - Copy\Latihan1\CodeIgniter4-develop\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\TST - Copy\Latihan1\CodeIgniter4-develop\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#11 D:\TST - Copy\Latihan1\CodeIgniter4-develop\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 D:\TST - Copy\Latihan1\CodeIgniter4-develop\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 D:\TST - Copy\Latihan1\CodeIgniter4-develop\system\rewrite.php(44): require_once('D:\\TST - Copy\\L...')
+#14 {main}
+CRITICAL - 2024-12-28 13:24:25 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'students_courses.grade' in 'field list'
+[Method: GET, Route: mahasiswa/profil/1]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `students_courses`.`semester`, `courses`.`credits`, `students_courses`.`grade`
+FROM `students_courses`
+JOIN `courses` ON `students_courses`.`course_id` = `courses`.`id`
+WHERE `student_id` = :student_id:', [...], false)
+ 2 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\Mahasiswa\ProfilController.php(32): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Mahasiswa\ProfilController->index('1')
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mahasiswa\ProfilController))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('D:\\TST - Copy\\Latihan1\\CodeIgniter4-develop\\public\\index.php')
+CRITICAL - 2024-12-28 13:24:25 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'students_courses.grade' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `students_courses`.`semester`, `courses`.`credits`, `students_courses`.`grade`
+FROM `students_courses`
+JOIN `courses` ON `students_courses`.`course_id` = `courses`.`id`
+WHERE `student_id` = \'1\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `students_courses`.`semester`, `courses`.`credits`, `students_courses`.`grade`
+FROM `students_courses`
+JOIN `courses` ON `students_courses`.`course_id` = `courses`.`id`
+WHERE `student_id` = \'1\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `students_courses`.`semester`, `courses`.`credits`, `students_courses`.`grade`
+FROM `students_courses`
+JOIN `courses` ON `students_courses`.`course_id` = `courses`.`id`
+WHERE `student_id` = :student_id:', [...], false)
+ 4 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Controllers\Mahasiswa\ProfilController.php(32): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Mahasiswa\ProfilController->index('1')
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mahasiswa\ProfilController))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('D:\\TST - Copy\\Latihan1\\CodeIgniter4-develop\\public\\index.php')
+CRITICAL - 2024-12-28 13:24:25 --> [Caused by] mysqli_sql_exception: Unknown column 'students_courses.grade' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('SELECT `students_courses`.`semester`, `courses`.`credits`, `students_courses`.`grade`
+FROM `students_courses`
+JOIN `courses` ON `students_courses`.`course_id` = `courses`.`id`
+WHERE `student_id` = \'1\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `students_courses`.`semester`, `courses`.`credits`, `students_courses`.`grade`
+FROM `students_courses`
+JOIN `courses` ON `students_courses`.`course_id` = `courses`.`id`
+WHERE `student_id` = \'1\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `students_courses`.`semester`, `courses`.`credits`, `students_courses`.`grade`
+FROM `students_courses`
+JOIN `courses` ON `students_courses`.`course_id` = `courses`.`id`
+WHERE `student_id` = \'1\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `students_courses`.`semester`, `courses`.`credits`, `students_courses`.`grade`
+FROM `students_courses`
+JOIN `courses` ON `students_courses`.`course_id` = `courses`.`id`
+WHERE `student_id` = :student_id:', [...], false)
+ 5 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\Mahasiswa\ProfilController.php(32): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Mahasiswa\ProfilController->index('1')
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mahasiswa\ProfilController))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('D:\\TST - Copy\\Latihan1\\CodeIgniter4-develop\\public\\index.php')
+ERROR - 2024-12-28 13:49:12 --> mysqli_sql_exception: Unknown column 'students_courses.grade' in 'field list' in D:\TST - Copy\Latihan1\CodeIgniter4-develop\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 D:\TST - Copy\Latihan1\CodeIgniter4-develop\system\Database\MySQLi\Connection.php(312): mysqli->query('SELECT `student...', 0)
+#1 D:\TST - Copy\Latihan1\CodeIgniter4-develop\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `student...')
+#2 D:\TST - Copy\Latihan1\CodeIgniter4-develop\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `student...')
+#3 D:\TST - Copy\Latihan1\CodeIgniter4-develop\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `student...', Array, false)
+#4 D:\TST - Copy\Latihan1\CodeIgniter4-develop\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\TST - Copy\Latihan1\CodeIgniter4-develop\system\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\TST - Copy\Latihan1\CodeIgniter4-develop\app\Controllers\Mahasiswa\ProfilController.php(32): CodeIgniter\BaseModel->findAll()
+#7 D:\TST - Copy\Latihan1\CodeIgniter4-develop\system\CodeIgniter.php(933): App\Controllers\Mahasiswa\ProfilController->index('1')
+#8 D:\TST - Copy\Latihan1\CodeIgniter4-develop\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mahasiswa\ProfilController))
+#9 D:\TST - Copy\Latihan1\CodeIgniter4-develop\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\TST - Copy\Latihan1\CodeIgniter4-develop\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#11 D:\TST - Copy\Latihan1\CodeIgniter4-develop\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 D:\TST - Copy\Latihan1\CodeIgniter4-develop\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 D:\TST - Copy\Latihan1\CodeIgniter4-develop\system\rewrite.php(44): require_once('D:\\TST - Copy\\L...')
+#14 {main}
+CRITICAL - 2024-12-28 13:49:12 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'students_courses.grade' in 'field list'
+[Method: GET, Route: mahasiswa/profil/1]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `students_courses`.`semester`, `courses`.`credits`, `students_courses`.`grade`
+FROM `students_courses`
+JOIN `courses` ON `students_courses`.`course_id` = `courses`.`id`
+WHERE `student_id` = :student_id:', [...], false)
+ 2 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\Mahasiswa\ProfilController.php(32): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Mahasiswa\ProfilController->index('1')
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mahasiswa\ProfilController))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('D:\\TST - Copy\\Latihan1\\CodeIgniter4-develop\\public\\index.php')
+CRITICAL - 2024-12-28 13:49:12 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'students_courses.grade' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `students_courses`.`semester`, `courses`.`credits`, `students_courses`.`grade`
+FROM `students_courses`
+JOIN `courses` ON `students_courses`.`course_id` = `courses`.`id`
+WHERE `student_id` = \'1\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `students_courses`.`semester`, `courses`.`credits`, `students_courses`.`grade`
+FROM `students_courses`
+JOIN `courses` ON `students_courses`.`course_id` = `courses`.`id`
+WHERE `student_id` = \'1\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `students_courses`.`semester`, `courses`.`credits`, `students_courses`.`grade`
+FROM `students_courses`
+JOIN `courses` ON `students_courses`.`course_id` = `courses`.`id`
+WHERE `student_id` = :student_id:', [...], false)
+ 4 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Controllers\Mahasiswa\ProfilController.php(32): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Mahasiswa\ProfilController->index('1')
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mahasiswa\ProfilController))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('D:\\TST - Copy\\Latihan1\\CodeIgniter4-develop\\public\\index.php')
+CRITICAL - 2024-12-28 13:49:12 --> [Caused by] mysqli_sql_exception: Unknown column 'students_courses.grade' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('SELECT `students_courses`.`semester`, `courses`.`credits`, `students_courses`.`grade`
+FROM `students_courses`
+JOIN `courses` ON `students_courses`.`course_id` = `courses`.`id`
+WHERE `student_id` = \'1\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `students_courses`.`semester`, `courses`.`credits`, `students_courses`.`grade`
+FROM `students_courses`
+JOIN `courses` ON `students_courses`.`course_id` = `courses`.`id`
+WHERE `student_id` = \'1\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `students_courses`.`semester`, `courses`.`credits`, `students_courses`.`grade`
+FROM `students_courses`
+JOIN `courses` ON `students_courses`.`course_id` = `courses`.`id`
+WHERE `student_id` = \'1\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `students_courses`.`semester`, `courses`.`credits`, `students_courses`.`grade`
+FROM `students_courses`
+JOIN `courses` ON `students_courses`.`course_id` = `courses`.`id`
+WHERE `student_id` = :student_id:', [...], false)
+ 5 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\Mahasiswa\ProfilController.php(32): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Mahasiswa\ProfilController->index('1')
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mahasiswa\ProfilController))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('D:\\TST - Copy\\Latihan1\\CodeIgniter4-develop\\public\\index.php')
+CRITICAL - 2024-12-28 13:49:27 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "profil.php"
+[Method: GET, Route: mahasiswa/profil/1]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('profil.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('profil', [], true)
+ 3 APPPATH\Controllers\Mahasiswa\ProfilController.php(76): view('profil', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Mahasiswa\ProfilController->index('1')
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mahasiswa\ProfilController))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('D:\\TST - Copy\\Latihan1\\CodeIgniter4-develop\\public\\index.php')
+ERROR - 2024-12-28 14:25:38 --> mysqli_sql_exception: Unknown column 'students_courses.semester' in 'field list' in D:\TST - Copy\Latihan1\CodeIgniter4-develop\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 D:\TST - Copy\Latihan1\CodeIgniter4-develop\system\Database\MySQLi\Connection.php(312): mysqli->query('SELECT `student...', 0)
+#1 D:\TST - Copy\Latihan1\CodeIgniter4-develop\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `student...')
+#2 D:\TST - Copy\Latihan1\CodeIgniter4-develop\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `student...')
+#3 D:\TST - Copy\Latihan1\CodeIgniter4-develop\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `student...', Array, false)
+#4 D:\TST - Copy\Latihan1\CodeIgniter4-develop\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\TST - Copy\Latihan1\CodeIgniter4-develop\system\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\TST - Copy\Latihan1\CodeIgniter4-develop\app\Controllers\Mahasiswa\ProfilController.php(32): CodeIgniter\BaseModel->findAll()
+#7 D:\TST - Copy\Latihan1\CodeIgniter4-develop\system\CodeIgniter.php(933): App\Controllers\Mahasiswa\ProfilController->index('1')
+#8 D:\TST - Copy\Latihan1\CodeIgniter4-develop\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mahasiswa\ProfilController))
+#9 D:\TST - Copy\Latihan1\CodeIgniter4-develop\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\TST - Copy\Latihan1\CodeIgniter4-develop\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#11 D:\TST - Copy\Latihan1\CodeIgniter4-develop\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 D:\TST - Copy\Latihan1\CodeIgniter4-develop\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 D:\TST - Copy\Latihan1\CodeIgniter4-develop\system\rewrite.php(44): require_once('D:\\TST - Copy\\L...')
+#14 {main}
+CRITICAL - 2024-12-28 14:25:38 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'students_courses.semester' in 'field list'
+[Method: GET, Route: mahasiswa/profil/1]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `students_courses`.`semester`, `courses`.`credits`
+FROM `students_courses`
+JOIN `courses` ON `students_courses`.`course_id` = `courses`.`id`
+WHERE `student_id` = :student_id:', [...], false)
+ 2 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\Mahasiswa\ProfilController.php(32): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Mahasiswa\ProfilController->index('1')
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mahasiswa\ProfilController))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('D:\\TST - Copy\\Latihan1\\CodeIgniter4-develop\\public\\index.php')
+CRITICAL - 2024-12-28 14:25:38 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'students_courses.semester' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `students_courses`.`semester`, `courses`.`credits`
+FROM `students_courses`
+JOIN `courses` ON `students_courses`.`course_id` = `courses`.`id`
+WHERE `student_id` = \'1\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `students_courses`.`semester`, `courses`.`credits`
+FROM `students_courses`
+JOIN `courses` ON `students_courses`.`course_id` = `courses`.`id`
+WHERE `student_id` = \'1\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `students_courses`.`semester`, `courses`.`credits`
+FROM `students_courses`
+JOIN `courses` ON `students_courses`.`course_id` = `courses`.`id`
+WHERE `student_id` = :student_id:', [...], false)
+ 4 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Controllers\Mahasiswa\ProfilController.php(32): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Mahasiswa\ProfilController->index('1')
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mahasiswa\ProfilController))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('D:\\TST - Copy\\Latihan1\\CodeIgniter4-develop\\public\\index.php')
+CRITICAL - 2024-12-28 14:25:38 --> [Caused by] mysqli_sql_exception: Unknown column 'students_courses.semester' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('SELECT `students_courses`.`semester`, `courses`.`credits`
+FROM `students_courses`
+JOIN `courses` ON `students_courses`.`course_id` = `courses`.`id`
+WHERE `student_id` = \'1\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `students_courses`.`semester`, `courses`.`credits`
+FROM `students_courses`
+JOIN `courses` ON `students_courses`.`course_id` = `courses`.`id`
+WHERE `student_id` = \'1\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `students_courses`.`semester`, `courses`.`credits`
+FROM `students_courses`
+JOIN `courses` ON `students_courses`.`course_id` = `courses`.`id`
+WHERE `student_id` = \'1\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `students_courses`.`semester`, `courses`.`credits`
+FROM `students_courses`
+JOIN `courses` ON `students_courses`.`course_id` = `courses`.`id`
+WHERE `student_id` = :student_id:', [...], false)
+ 5 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\Mahasiswa\ProfilController.php(32): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Mahasiswa\ProfilController->index('1')
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mahasiswa\ProfilController))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('D:\\TST - Copy\\Latihan1\\CodeIgniter4-develop\\public\\index.php')
+CRITICAL - 2024-12-28 14:29:02 --> ErrorException: Undefined array key "grade"
+[Method: GET, Route: mahasiswa/profil/1]
+in APPPATH\Controllers\Mahasiswa\ProfilController.php on line 52.
+ 1 APPPATH\Controllers\Mahasiswa\ProfilController.php(52): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "grade"', 'D:\\TST - Copy\\Latihan1\\CodeIgniter4-develop\\app\\Controllers\\Mahasiswa\\ProfilController.php', 52)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Mahasiswa\ProfilController->index('1')
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mahasiswa\ProfilController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('D:\\TST - Copy\\Latihan1\\CodeIgniter4-develop\\public\\index.php')
+CRITICAL - 2024-12-28 14:29:48 --> ErrorException: Undefined array key "grade"
+[Method: GET, Route: mahasiswa/profil/1]
+in APPPATH\Controllers\Mahasiswa\ProfilController.php on line 52.
+ 1 APPPATH\Controllers\Mahasiswa\ProfilController.php(52): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "grade"', 'D:\\TST - Copy\\Latihan1\\CodeIgniter4-develop\\app\\Controllers\\Mahasiswa\\ProfilController.php', 52)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Mahasiswa\ProfilController->index('1')
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mahasiswa\ProfilController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('D:\\TST - Copy\\Latihan1\\CodeIgniter4-develop\\public\\index.php')
+DEBUG - 2024-12-28 15:51:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-12-28 15:51:43 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+DEBUG - 2024-12-28 15:52:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-12-28 15:52:28 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+DEBUG - 2024-12-28 15:54:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-12-28 15:54:34 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+CRITICAL - 2024-12-28 16:09:23 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "jadwal_kuliah_bulan.php"
+[Method: GET, Route: mahasiswa/jadwal-kuliah-bulan/1/12/2024]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('jadwal_kuliah_bulan.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('jadwal_kuliah_bulan', [], true)
+ 3 APPPATH\Controllers\Mahasiswa\JadwalController.php(31): view('jadwal_kuliah_bulan', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Mahasiswa\JadwalController->jadwalKuliahBulan('1', '12', '2024')
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mahasiswa\JadwalController))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('D:\\TST - Copy\\Latihan1\\CodeIgniter4-develop\\public\\index.php')
+DEBUG - 2024-12-28 16:28:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-12-28 16:28:58 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+CRITICAL - 2024-12-28 16:58:46 --> ErrorException: Undefined variable $month
+[Method: GET, Route: mahasiswa/jadwal-kuliah/1]
+in APPPATH\Views\jadwal_kuliah.php on line 6.
+ 1 APPPATH\Views\jadwal_kuliah.php(6): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $month', 'D:\\TST - Copy\\Latihan1\\CodeIgniter4-develop\\app\\Views\\jadwal_kuliah.php', 6)
+ 2 SYSTEMPATH\View\View.php(234): include('D:\\TST - Copy\\Latihan1\\CodeIgniter4-develop\\app\\Views\\jadwal_kuliah.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('jadwal_kuliah', [], true)
+ 5 APPPATH\Controllers\Mahasiswa\JadwalController.php(21): view('jadwal_kuliah', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Mahasiswa\JadwalController->jadwalKuliah('1')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mahasiswa\JadwalController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\TST - Copy\\Latihan1\\CodeIgniter4-develop\\public\\index.php')
+DEBUG - 2024-12-28 17:39:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-12-28 17:39:02 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+CRITICAL - 2024-12-28 17:45:34 --> Error: Class "App\Controllers\Admin\CourseModel" not found
+[Method: GET, Route: admin/courses]
+in APPPATH\Controllers\Admin\EditCourseController.php on line 12.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\EditCourseController->index()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\EditCourseController))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('D:\\TST - Copy\\Latihan1\\CodeIgniter4-develop\\public\\index.php')
+DEBUG - 2024-12-28 18:00:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-12-28 18:00:11 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+DEBUG - 2024-12-28 18:00:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-12-28 18:00:13 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+DEBUG - 2024-12-28 18:06:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2024-12-28 18:10:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2024-12-28 18:11:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2024-12-28 18:16:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2024-12-28 18:18:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2024-12-28 18:21:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2024-12-28 18:28:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-12-28 18:28:48 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+CRITICAL - 2024-12-28 18:28:48 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "signup.php"
+[Method: GET, Route: signup]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('signup.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('signup', [], true)
+ 3 APPPATH\Controllers\Auth.php(49): view('signup')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->signupView()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('D:\\TST - Copy\\Latihan1\\CodeIgniter4-develop\\public\\index.php')
+DEBUG - 2024-12-28 18:29:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-12-28 18:29:40 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+DEBUG - 2024-12-28 18:29:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-12-28 18:29:54 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+DEBUG - 2024-12-28 18:29:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-12-28 18:29:55 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+DEBUG - 2024-12-28 18:29:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-12-28 18:29:59 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+DEBUG - 2024-12-28 18:30:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-12-28 18:30:00 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+DEBUG - 2024-12-28 18:30:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-12-28 18:30:03 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+DEBUG - 2024-12-28 18:30:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-12-28 18:30:04 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+DEBUG - 2024-12-28 18:30:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-12-28 18:30:34 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+DEBUG - 2024-12-28 18:30:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-12-28 18:30:38 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+DEBUG - 2024-12-28 18:31:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-12-28 18:31:14 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+DEBUG - 2024-12-28 18:31:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-12-28 18:31:16 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+DEBUG - 2024-12-28 18:31:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-12-28 18:31:29 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+DEBUG - 2024-12-28 18:31:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-12-28 18:31:32 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+DEBUG - 2024-12-28 18:31:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-12-28 18:31:46 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+DEBUG - 2024-12-28 18:32:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-12-28 18:32:39 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+DEBUG - 2024-12-28 18:32:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-12-28 18:32:39 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+DEBUG - 2024-12-28 18:32:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-12-28 18:32:40 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+DEBUG - 2024-12-28 18:32:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-12-28 18:32:55 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+DEBUG - 2024-12-28 18:32:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-12-28 18:32:55 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+DEBUG - 2024-12-28 18:37:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-12-28 18:37:01 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+DEBUG - 2024-12-28 18:37:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-12-28 18:37:10 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+DEBUG - 2024-12-28 18:37:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-12-28 18:37:10 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+DEBUG - 2024-12-28 18:43:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2024-12-28 18:44:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2024-12-28 18:48:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2024-12-28 18:48:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
