@@ -14,6 +14,14 @@ Tugas UAS 2 II3160 Teknologi Sistem Terintegrasi bertujuan untuk memberikan peng
 4. IP Generator: Fitur untuk memperkirakan Indeks Prestasi (IP) yang akan diperoleh oleh pengguna pada semester yang sedang dijalani.
 
 ## How to Run
+1. Open this URL
+```
+http://studenthub18222078.zya.me/monic/public
+```
+2. Sign up if you don't have an account yet, then log in to your account.
+3. Log in directly if you want to try using the existing data (username: Monica, password: Monica).
+4. You have successfully accessed the features available on StudentHub.
+5. Welcome to the StudentHub Learning Management System. We hope it provides you with an enjoyable experience!
 
 ## Contributors
 ### Kelompok 7 - Final Project
